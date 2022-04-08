@@ -29,10 +29,10 @@ displayEnd "Install common tools"
 
 
 displaybegin "Ajout du repository"
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - > log 2>&1
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - > log 2>&1
 
 sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   "deb [arch=amd64] https://download.docker.com/linux/debian \
    $(lsb_release -cs) \
    stable" > log 2>&1
 displayEnd "Ajout du repository"
